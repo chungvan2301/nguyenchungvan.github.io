@@ -568,7 +568,7 @@
 
 	<p>Trong bước này, chúng ta sẽ cần tạo một kiến trúc mạng VPC có 2 public subnet, 2 private subnet, internet gateway và NAT gatway.</p>
 <p>Tổng quan kiến trúc sau khi các bạn hoàn tất bước này sẽ như sau:</p>
-<p><img src="/images/log.png" alt="VPC"></p>
+<p><img src="/nguyenchungvan.github.io/images/log.png" alt="VPC"></p>
 <h3 id="tạo-vpc">Tạo VPC</h3>
 <ol>
 <li>Truy cập vào <a href="https://ap-southeast-1.console.aws.amazon.com/vpcconsole/home?region=ap-southeast-1#Home:">giao diện quản trị dịch vụ VPC</a></li>
@@ -577,7 +577,7 @@
 <li>Chọn <strong>Your VPCs</strong>.</li>
 <li>Chọn <strong>Create VPC</strong>.</li>
 </ul>
-<p><img src="/images/2.prerequisite/01-createvpc.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/01-createvpc.png" alt="ConnectPrivate"></p>
 <ol start="2">
 <li>Tại trang <strong>Bước 1</strong>.</li>
 </ol>
@@ -585,7 +585,7 @@
 <li>Chọn <strong>VPC and more</strong> để tạo nhanh kiến trúc VPC theo yêu cầu.</li>
 <li>Điền tên VPC và dải IPv4 mà bạn muốn tạo</li>
 </ul>
-<p><img src="/images/2.prerequisite/02-createvpc.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/02-createvpc.png" alt="ConnectPrivate"></p>
 <ul>
 <li>Ở mục <strong>Number of Availability Zones (AZs)</strong> chọn 2 AZs.</li>
 <li>Ở mục <strong>Number of public subnets</strong> chọn <strong>2</strong> subnets.</li>
@@ -593,23 +593,23 @@
 <li>Ở mục <strong>NAT gateways</strong> chọn <strong>1 per AZ</strong>.</li>
 <li>Ở mục <strong>VPC endpoints</strong> chọn <strong>None</strong>.</li>
 </ul>
-<p><img src="/images/2.prerequisite/03-createvpc.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/03-createvpc.png" alt="ConnectPrivate"></p>
 <ul>
 <li>Xem lại các lựa chọn và xác nhận tạo VPC <strong>Create VPC</strong>.</li>
 </ul>
-<p><img src="/images/2.prerequisite/04-createvpc.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/04-createvpc.png" alt="ConnectPrivate"></p>
 <ol start="3">
 <li>Sau khi VPC được tạo xong, kiểm tra các thành phần bên trong VPC như subnet hay các bảng định tuyến có đúng yêu cầu.</li>
 </ol>
-<p><img src="/images/2.prerequisite/05-createvpc.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/05-createvpc.png" alt="ConnectPrivate"></p>
 <ul>
 <li>Bảng định tuyến của <strong>public subnet</strong>: định tuyến lưu lượng trong VPC và ra ngoài qua internet gateway, dùng chung cho cả 2 public subnet.</li>
 </ul>
-<p><img src="/images/2.prerequisite/06-createvpc.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/06-createvpc.png" alt="ConnectPrivate"></p>
 <ul>
 <li>Bảng định tuyến của <strong>private subnet</strong>: định tuyến lưu lượng trong VPC và ra ngoài qua NAT gateway, mỗi bảng định tuyến được sử dụng cho mỗi private subnet và NAT gateway ứng với subnet đó.</li>
 </ul>
-<p><img src="/images/2.prerequisite/07-createvpc.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/07-createvpc.png" alt="ConnectPrivate"></p>
 
 
 
