@@ -581,27 +581,27 @@
 <li>Select <strong>Security Groups</strong>.</li>
 <li>Select <strong>Create security groups</strong>.</li>
 </ul>
-<p><img src="/images/2.prerequisite/10-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/10-createec2.png" alt="ConnectPrivate"></p>
 <ol start="2">
 <li>On the <strong>Step 1</strong> page</li>
 </ol>
 <ul>
 <li>Fill in the security group name, description and VPC information for the security group.</li>
 </ul>
-<p><img src="/images/2.prerequisite/08-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/08-createec2.png" alt="ConnectPrivate"></p>
 <ul>
 <li>Configure <strong>Inbound rules</strong>: allow all connections to ALB.</li>
 <li>Configure <strong>Outbound rules</strong>: allow connections out of ALB by default.</li>
 <li>Select create SG.</li>
 </ul>
-<p><img src="/images/2.prerequisite/09-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/09-createec2.png" alt="ConnectPrivate"></p>
 <p>Next, we create SG for EC2 similar to ALB:</p>
 <ul>
 <li>Configure <strong>Inbound rules</strong>: allow all connections from ALB to EC2.</li>
 <li>Configure <strong>Outbound rules</strong>: allow connections to EC2 by default.</li>
 <li>Select to create SG.</li>
 </ul>
-<p><img src="/images/2.prerequisite/11-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/11-createec2.png" alt="ConnectPrivate"></p>
 <p>Create EC2 Server:</p>
 <ol>
 <li>Access <a href="https://console.aws.amazon.com/ec2/v2/home">EC2 service management interface</a></li>
@@ -610,7 +610,7 @@
 <li>Select <strong>Instances</strong>.</li>
 <li>Select <strong>Launch instances</strong>.</li>
 </ul>
-<p><img src="/images/2.prerequisite/12-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/12-createec2.png" alt="ConnectPrivate"></p>
 <ol start="2">
 <li>On the <strong>Step 1</strong> page</li>
 </ol>
@@ -619,18 +619,18 @@
 <li>Select <strong>Amazon Machine Image</strong> as <strong>Amazon Linux 2 AMI</strong></li>
 <li>Select <strong>Instance type</strong> as <strong>t2.micro</strong>.</li>
 </ul>
-<p><img src="/images/2.prerequisite/13-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/13-createec2.png" alt="ConnectPrivate"></p>
 <ul>
 <li>In the <strong>Key pair</strong> section, select <strong>Create new key pair</strong>.</li>
 <li>Fill in the name, type (RSA) and format.</li>
 <li>Save the key pair in the project folder on your computer.</li>
 </ul>
-<p><img src="/images/2.prerequisite/14-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/14-createec2.png" alt="ConnectPrivate"></p>
 <ul>
 <li>Select the newly created keypair.</li>
 <li>Select <strong>Edit</strong> in the <strong>Network settings</strong> section to configure the network for EC2</li>
 </ul>
-<p><img src="/images/2.prerequisite/15-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/15-createec2.png" alt="ConnectPrivate"></p>
 <ul>
 <li>Select <strong>VPC</strong> as the newly created VPC.</li>
 <li>Select <strong>Subnet</strong> as private subnet 1.</li>
@@ -639,7 +639,7 @@
 <li>In <strong>Configure storage</strong>, leave the default <strong>8</strong> GiB gp2 for Root volume.</li>
 <li>Review the settings again, select <strong>Launch instance</strong> to initialize.</li>
 </ul>
-<p><img src="/images/2.prerequisite/16-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/16-createec2.png" alt="ConnectPrivate"></p>
 
 
 
