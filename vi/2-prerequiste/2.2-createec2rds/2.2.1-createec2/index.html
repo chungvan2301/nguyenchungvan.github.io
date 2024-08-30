@@ -581,27 +581,27 @@
 <li>Chọn <strong>Security Groups</strong>.</li>
 <li>Chọn <strong>Create security groups</strong>.</li>
 </ul>
-<p><img src="/images/2.prerequisite/10-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/10-createec2.png" alt="ConnectPrivate"></p>
 <ol start="2">
 <li>Tại trang <strong>Bước 1</strong></li>
 </ol>
 <ul>
 <li>Điền tên security group, mô tả và thông tin VPC cho security group.</li>
 </ul>
-<p><img src="/images/2.prerequisite/08-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/08-createec2.png" alt="ConnectPrivate"></p>
 <ul>
 <li>Cấu hình <strong>Inbound rules</strong>: cho phép tất cả kết nối đến ALB.</li>
 <li>Cấu hình <strong>Outbound rules</strong>: mặc định cho phép kết nối ra ALB.</li>
 <li>Chọn tạo SG.</li>
 </ul>
-<p><img src="/images/2.prerequisite/09-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/09-createec2.png" alt="ConnectPrivate"></p>
 <p>Tiếp theo ta tạo SG cho EC2 tương tự ALB:</p>
 <ul>
 <li>Cấu hình <strong>Inbound rules</strong>: cho phép tất cả kết nối từ ALB đến EC2.</li>
 <li>Cấu hình <strong>Outbound rules</strong>: mặc định cho phép kết nối ra EC2.</li>
 <li>Chọn tạo SG.</li>
 </ul>
-<p><img src="/images/2.prerequisite/11-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/11-createec2.png" alt="ConnectPrivate"></p>
 <p>Tạo EC2 Server:</p>
 <ol>
 <li>Truy cập <a href="https://console.aws.amazon.com/ec2/v2/home">giao diện quản trị dịch vụ EC2</a></li>
@@ -610,7 +610,7 @@
 <li>Chọn <strong>Instances</strong>.</li>
 <li>Chọn <strong>Launch instances</strong>.</li>
 </ul>
-<p><img src="/images/2.prerequisite/12-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/12-createec2.png" alt="ConnectPrivate"></p>
 <ol start="2">
 <li>Tại trang <strong>Bước 1</strong></li>
 </ol>
@@ -619,18 +619,18 @@
 <li>Chọn <strong>Amazon Machine Image</strong> là <strong>Amazon Linux 2 AMI</strong>.</li>
 <li>Chọn <strong>Instance type</strong> là <strong>t2.micro</strong>.</li>
 </ul>
-<p><img src="/images/2.prerequisite/13-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/13-createec2.png" alt="ConnectPrivate"></p>
 <ul>
 <li>Ở mục <strong>Key pair</strong>, chọn <strong>Create new key pair</strong>.</li>
 <li>Điền tên, loại (RSA) và định dạng.</li>
 <li>Lưu key pair ở thư mục project trên máy tính.</li>
 </ul>
-<p><img src="/images/2.prerequisite/14-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/14-createec2.png" alt="ConnectPrivate"></p>
 <ul>
 <li>Chọn keypair vừa tạo.</li>
 <li>Chọn <strong>Edit</strong> ở mục <strong>Network settings</strong> để cấu hình mạng cho EC2</li>
 </ul>
-<p><img src="/images/2.prerequisite/15-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/15-createec2.png" alt="ConnectPrivate"></p>
 <ul>
 <li>Chọn <strong>VPC</strong> là VPC vừa tạo.</li>
 <li>Chọn <strong>Subnet</strong> là private subnet 1.</li>
@@ -639,7 +639,7 @@
 <li>Trong phần <strong>Configure storage</strong>, để mặc định <strong>8</strong> GiB gp2 cho Root volume.</li>
 <li>Xem lại các cài đặt một lần nữa, chọn <strong>Launch instance</strong> để khởi tạo.</li>
 </ul>
-<p><img src="/images/2.prerequisite/16-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/16-createec2.png" alt="ConnectPrivate"></p>
 
 
 
