@@ -574,14 +574,14 @@
 </ol>
 <pre><code>  sudo su
   yum update
-</code></pre><p><img src="/images/3.connect/06-connect.png" alt="Connect"></p>
+</code></pre><p><img src="/nguyenchungvan.github.io/images/3.connect/06-connect.png" alt="Connect"></p>
 <ol start="2">
 <li>Cài đặt Java 21</li>
 </ol>
 <pre><code>  curl -fL -o https://corretto.aws/downloads/latest/amazon-corretto-21-x64-linux-jdk.tar.gz
   export JAVA_HOME=/urs/lib/jvm/java-21-amazon-corretto
   java -version
-</code></pre><p><img src="/images/3.connect/07-connect.png" alt="Connect"></p>
+</code></pre><p><img src="/nguyenchungvan.github.io/images/3.connect/07-connect.png" alt="Connect"></p>
 <ol start="3">
 <li>Cài MVN</li>
 </ol>
@@ -589,7 +589,7 @@
   sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
   sudo yum install -y apache-maven
   mvn -v
-</code></pre><p><img src="/images/3.connect/08-connect.png" alt="Connect"></p>
+</code></pre><p><img src="/nguyenchungvan.github.io/images/3.connect/08-connect.png" alt="Connect"></p>
 <h3 id="tải-file-project-từ-máy-tính-lên-ec2-thông-qua-aws-s3">Tải file project từ máy tính lên EC2 thông qua AWS S3</h3>
 
 <div class="notices note" ><p>Trong bài lab này, project được copy từ S3 Bucket đến EC2 server thông qua Internet Gateway và NAT Gateway, có thể dùng VPC Endpoint tăng tăng cường bảo mật, hiệu suất và chi phí khi kết nối các dịch vụ của AWS.</p>
@@ -609,31 +609,31 @@
 <li>Chọn <strong>Security</strong>.</li>
 <li>Chọn <strong>Modify IAM role</strong>.</li>
 </ul>
-<p><img src="/images/3.connect/09-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/09-connect.png" alt="Connect"></p>
 <ol start="2">
 <li>Tạo IAM role</li>
 </ol>
 <ul>
 <li>Chọn <strong>Create new IAM role</strong></li>
 </ul>
-<p><img src="/images/3.connect/10-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/10-connect.png" alt="Connect"></p>
 <ul>
 <li>Trong mục <strong>Roles</strong> ở <a href="https://us-east-1.console.aws.amazon.com/iam/home?region=ap-southeast-1#/roles">giao diện Identity and Access Management (IAM)</a>, chọn <strong>Create role</strong>.</li>
 </ul>
-<p><img src="/images/3.connect/11-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/11-connect.png" alt="Connect"></p>
 <ul>
 <li>Ở trang tiếp theo chọn <strong>Trusted entity type</strong> là <strong>AWS service</strong>, mục <strong>Service or use case</strong> chọn <strong>EC2</strong>.</li>
 </ul>
-<p><img src="/images/3.connect/12-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/12-connect.png" alt="Connect"></p>
 <ul>
 <li>
 <p>Bước tiếp theo, chọn quyền <strong>AmazonS3FullAccess</strong> cho EC2, chọn <strong>Next</strong>.</p>
-<p><img src="/images/3.connect/13-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/13-connect.png" alt="Connect"></p>
 </li>
 <li>
 <p>Điền tên <strong>Role name</strong>, <strong>Description</strong>, và review lại role đã tạo, sau đó chọn <strong>Create role</strong>.</p>
-<p><img src="/images/3.connect/14-connect.png" alt="Connect"></p>
-<p><img src="/images/3.connect/15-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/14-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/15-connect.png" alt="Connect"></p>
 </li>
 </ul>
 <ol start="3">
@@ -648,8 +648,8 @@
 </li>
 <li>
 <p>Chọn <strong>Update IAM role</strong>.</p>
-<p><img src="/images/3.connect/16-connect.png" alt="Connect">
-<img src="/images/3.connect/17-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/16-connect.png" alt="Connect">
+<img src="/nguyenchungvan.github.io/images/3.connect/17-connect.png" alt="Connect"></p>
 </li>
 </ul>
 <ol start="4">
@@ -660,13 +660,13 @@
 <div class="notices note" ><p>Nếu EC2 chưa được gán quyền truy cập S3 sẽ xuất hiện lỗi <strong>fatal error: Unable to locate credentials</strong>.</p>
 </div>
 
-<p><img src="/images/3.connect/18-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/18-connect.png" alt="Connect"></p>
 <h3 id="triển-khai-ứng-dụng-lên-ec2">Triển khai ứng dụng lên EC2</h3>
 <ol>
 <li>Giải nén tệp</li>
 </ol>
 <pre><code>  unzip myphone
-</code></pre><p><img src="/images/3.connect/19-connect.png" alt="Connect"></p>
+</code></pre><p><img src="/nguyenchungvan.github.io/images/3.connect/19-connect.png" alt="Connect"></p>
 <ol start="2">
 <li>Cấu hình lại file kết nối với database</li>
 </ol>
@@ -677,16 +677,16 @@
 </code></pre><ul>
 <li>Sửa lại <strong>url</strong>, <strong>username</strong>, <strong>password</strong> ứng với RDS đã tạo, sau đó lưu lại file.</li>
 </ul>
-<p><img src="/images/3.connect/22-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/22-connect.png" alt="Connect"></p>
 <ol start="3">
 <li>Chạy project</li>
 </ol>
 <pre><code>  mvn spring-boot: run
-</code></pre><p><img src="/images/3.connect/20-connect.png" alt="Connect"></p>
+</code></pre><p><img src="/nguyenchungvan.github.io/images/3.connect/20-connect.png" alt="Connect"></p>
 <ul>
 <li>Project đã chạy trên EC2 thành công.</li>
 </ul>
-<p><img src="/images/3.connect/21-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/21-connect.png" alt="Connect"></p>
 <ol start="4">
 <li>Tạo Application Load Balancer</li>
 </ol>
@@ -694,56 +694,56 @@
 <li>Ở trang <a href="https://ap-southeast-1.console.aws.amazon.com/ec2/home?region=ap-southeast-1#Home:">giao diện quản trị của dịch vụ EC2</a>, chọn <strong>Load Balancers</strong>.</li>
 <li>Chọn <strong>Create load balancer</strong>.</li>
 </ul>
-<p><img src="/images/3.connect/23-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/23-connect.png" alt="Connect"></p>
 <ul>
 <li>Chọn <strong>Create</strong> Application Load Balancer.</li>
 </ul>
-<p><img src="/images/3.connect/24-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/24-connect.png" alt="Connect"></p>
 <ul>
 <li>Điền tên ALB, chọn Scheme <strong>Internet-facing</strong> để có thể kết nối đến trang web đã chạy, chọn Load banlancer IP address type <strong>IPv4</strong>.</li>
 </ul>
-<p><img src="/images/3.connect/25-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/25-connect.png" alt="Connect"></p>
 <ul>
 <li>Phần <strong>Network mapping</strong>, chọn VPC đã tạo và 2 public subnet ở 2 AZ bên trong VPC để kết nối với ALB.</li>
 </ul>
-<p><img src="/images/3.connect/26-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/26-connect.png" alt="Connect"></p>
 <ul>
 <li>Chọn <strong>Security group</strong> đã tạo cho ALB.</li>
 </ul>
-<p><img src="/images/3.connect/27-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/27-connect.png" alt="Connect"></p>
 <ul>
 <li>Trong phần <strong>Listeners and routing</strong>, chọn <strong>Create target group</strong> để tạo Target group cho ALB.</li>
 </ul>
-<p><img src="/images/3.connect/28-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/28-connect.png" alt="Connect"></p>
 <ul>
 <li>Chọn loại target <strong>Instance</strong> và điền tên <strong>Target group name</strong>.</li>
 </ul>
-<p><img src="/images/3.connect/29-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/29-connect.png" alt="Connect"></p>
 <ul>
 <li>Chọn <strong>Protocal:Port</strong>, <strong>IP address type</strong>, <strong>Heal check</strong>, sau đó chọn <strong>Next</strong></li>
 </ul>
-<p><img src="/images/3.connect/30-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/30-connect.png" alt="Connect"></p>
 <ul>
 <li>Thêm instance đang chạy vào target group, sau đó chọn <strong>Create target group</strong>.</li>
 </ul>
-<p><img src="/images/3.connect/31-connect.png" alt="Connect"></p>
-<p><img src="/images/3.connect/32-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/31-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/32-connect.png" alt="Connect"></p>
 <ul>
 <li>Quay về trang tạo ALB, refresh lại và chọn target group vừa tạo.</li>
 </ul>
-<p><img src="/images/3.connect/33-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/33-connect.png" alt="Connect"></p>
 <ul>
 <li>Xem lại các lựa chọn lần nữa và chọn  <strong>Create load balancer</strong>.</li>
 </ul>
-<p><img src="/images/3.connect/34-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/34-connect.png" alt="Connect"></p>
 <ul>
 <li>Truy cập vào trang web từ DNS của ALB</li>
 </ul>
-<p><img src="/images/3.connect/35-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/35-connect.png" alt="Connect"></p>
 <ul>
 <li>Kết quả khi triển khai ứng dụng thành công</li>
 </ul>
-<p><img src="/images/3.connect/36-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/36-connect.png" alt="Connect"></p>
 <ol start="5">
 <li>Restore database từ bản backup</li>
 </ol>
@@ -752,7 +752,7 @@
 </ul>
 <pre><code>  yum install postgresql -y
   pg_restore --version
-</code></pre><p><img src="/images/3.connect/39-connect.png" alt="Connect"></p>
+</code></pre><p><img src="/nguyenchungvan.github.io/images/3.connect/39-connect.png" alt="Connect"></p>
 <ul>
 <li>Tiến hành restore lại database từ fileb mybackup.sql</li>
 </ul>
@@ -764,7 +764,7 @@
 <ul>
 <li>Sau khi restore, kiểm tra lại trang web.</li>
 </ul>
-<p><img src="/images/3.connect/40-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/40-connect.png" alt="Connect"></p>
 <ol start="6">
 <li>Tạo Auto Scaling Group</li>
 </ol>
@@ -776,70 +776,70 @@
 <li>Chọn <strong>Image and templates</strong>.</li>
 <li>Chọn <strong>Create image</strong>.</li>
 </ul>
-<p><img src="/images/3.connect/37-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/37-connect.png" alt="Connect"></p>
 <ul>
 <li>Điền tên image cần tạo và mô tả.</li>
 </ul>
-<p><img src="/images/3.connect/38-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/38-connect.png" alt="Connect"></p>
 <ul>
 <li>Giữ các cấu hình mặc định, chọn <strong>Create image</strong>.</li>
 </ul>
-<p><img src="/images/3.connect/41-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/41-connect.png" alt="Connect"></p>
 <ul>
 <li>Chuyển sang <a href="https://ap-southeast-1.console.aws.amazon.com/ec2/home?region=ap-southeast-1#Home:">giao diện quản trị của dịch vụ EC2</a>, chọn <strong>Auto Scaling Group</strong>, chọn <strong>Create Auto Scaling Group</strong>.</li>
 </ul>
-<p><img src="/images/3.connect/42-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/42-connect.png" alt="Connect"></p>
 <ul>
 <li>Điền tên Auto Scaling Group và chọn <strong>Create launch template</strong>.</li>
 </ul>
-<p><img src="/images/3.connect/43-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/43-connect.png" alt="Connect"></p>
 <ul>
 <li>Ở giao diện tạo template, điền tên template và mô tả.</li>
 </ul>
-<p><img src="/images/3.connect/44-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/44-connect.png" alt="Connect"></p>
 <ul>
 <li>
 <p>Chọn <strong>Application and OS Images</strong> là AMI vừa tạo ở trên.</p>
-<p><img src="/images/3.connect/45-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/45-connect.png" alt="Connect"></p>
 </li>
 <li>
 <p>Chọn <strong>Instance type</strong> và <strong>Key pair</strong> mà bạn muốn.</p>
 </li>
 </ul>
-<p><img src="/images/3.connect/46-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/46-connect.png" alt="Connect"></p>
 <ul>
 <li>Để mặc định ở <strong>Network settings</strong>.</li>
 </ul>
-<p><img src="/images/3.connect/47-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/47-connect.png" alt="Connect"></p>
 <ul>
 <li>Kiểm tra lại các lựa chọn một lần nữa, chọn <strong>Create launch template</strong>.</li>
 </ul>
-<p><img src="/images/3.connect/48-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/48-connect.png" alt="Connect"></p>
 <ul>
 <li>Chuyển sang trang tạo ASG, refresh lại <strong>Launch template</strong>, chọn launch template vừa tạo.</li>
 <li>Chọn <strong>Next</strong>.</li>
 </ul>
-<p><img src="/images/3.connect/49-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/49-connect.png" alt="Connect"></p>
 <ul>
 <li>
 <p>Ở trang tiếp theo, trong <strong>Network</strong> chọn VPC của bài lab, chọn các 2 private subnet cần tạo EC2 bên trong.</p>
-<p><img src="/images/3.connect/50-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/50-connect.png" alt="Connect"></p>
 </li>
 <li>
 <p>Trong mục <strong>Load balancing</strong>, Chọn ALB đã tạo, sau đó chọn <strong>Next</strong>.</p>
 </li>
 </ul>
-<p><img src="/images/3.connect/51-connect.png" alt="Connect"></p>
-<p><img src="/images/3.connect/52-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/51-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/52-connect.png" alt="Connect"></p>
 <ul>
 <li>Điền số lượng EC2 bạn muốn tạo, theo kiến trúc ta cần 2 EC2 ở 2 AZ khác nhau. Điền số lượng EC2 duy trì tối thiểu, số lượng EC2 triển khai tối đa.</li>
 </ul>
-<p><img src="/images/3.connect/52-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/52-connect.png" alt="Connect"></p>
 <ul>
 <li>Tiếp tục chọn <strong>Next</strong> ở các <strong>Step 5</strong> và <strong>Step 6</strong>.</li>
 <li>Xem lại các cài đặt một lần nữa, chọn <strong>Create Auto Scaling Group</strong>.</li>
 </ul>
-<p><img src="/images/3.connect/54-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/54-connect.png" alt="Connect"></p>
 <ul>
 <li>Sau khi tạo xong cần Attach EC2 ban đầu vào ASG.</li>
 <li>Chọn <strong>Instances</strong>.</li>
@@ -848,15 +848,15 @@
 <li>Chọn <strong>Instances settings</strong>.</li>
 <li>Chọn <strong>Attach to Auto Scaling Group</strong>.</li>
 </ul>
-<p><img src="/images/3.connect/56-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/56-connect.png" alt="Connect"></p>
 <ul>
 <li>Chọn ASG vừa tạo.</li>
 </ul>
-<p><img src="/images/3.connect/57-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/57-connect.png" alt="Connect"></p>
 <ul>
 <li>Sau khi gán thành công, ở giao diện <strong>Instance</strong>, xóa instance còn thừa.</li>
 </ul>
-<p><img src="/images/3.connect/55-connect.png" alt="Connect"></p>
+<p><img src="/nguyenchungvan.github.io/images/3.connect/55-connect.png" alt="Connect"></p>
 
 
 
