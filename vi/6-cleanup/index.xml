@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dọn dẹp tài nguyên   on Triển khai ứng dụng Spring Boot lên EC2</title>
-    <link>/vi/6-cleanup/</link>
+    <link>https://chungvan2301.github.io/nguyenchungvan.github.io/vi/6-cleanup/</link>
     <description>Recent content in Dọn dẹp tài nguyên   on Triển khai ứng dụng Spring Boot lên EC2</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 01 Jan 1970 08:33:44 +0800</lastBuildDate>
     
-	<atom:link href="/vi/6-cleanup/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://chungvan2301.github.io/nguyenchungvan.github.io/vi/6-cleanup/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
