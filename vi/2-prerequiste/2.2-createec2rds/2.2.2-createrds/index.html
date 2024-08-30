@@ -571,7 +571,7 @@
 <li>Chọn <strong>Databases</strong>.</li>
 <li>Chọn <strong>Create database</strong>.</li>
 </ul>
-<p><img src="/images/2.prerequisite/17-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/17-createec2.png" alt="ConnectPrivate"></p>
 <ol start="2">
 <li>Tại trang <strong>Bước 1</strong></li>
 </ol>
@@ -579,7 +579,7 @@
 <li>Chọn <strong>Standard create</strong>.</li>
 <li>Chọn loại database là <strong>PostgreSQL</strong>.</li>
 </ul>
-<p><img src="/images/2.prerequisite/18-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/18-createec2.png" alt="ConnectPrivate"></p>
 <ul>
 <li>Chọn phiên bản PostgreSQL.</li>
 <li>Chọn <strong>Template</strong> là Freetier.</li>
@@ -588,7 +588,7 @@
 <div class="notices note" ><p>Các lựa chọn triển khai ở nhiều AZ chỉ được mở ở các template Dev/Test và Production. Với <strong>Multi-AZ DB cluster</strong>, có hai DB dự phòng có khả năng xử lý lưu lượng đọc, cung cấp tính sẵn sàng cao hơn và phân tán tải công việc. Với <strong>Multi-AZ DB Instance</strong>, Chỉ có một DB dự phòng không xử lý lưu lượng đọc, chỉ dùng để chuyển đổi dự phòng.</p>
 </div>
 
-<p><img src="/images/2.prerequisite/19-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/19-createec2.png" alt="ConnectPrivate"></p>
 <ul>
 <li>Trong mục <strong>Settings</strong>, điền tên DB cluster của bạn, tên master username dùng để đăng nhập database.</li>
 <li>Chọn <strong>Self managed</strong> để tự quản lý xác thực bằng mật khẩu, điền mật khẩu và nhắc lại mật khẩu cần tạo.</li>
@@ -597,37 +597,37 @@
 <div class="notices note" ><p>Database cluster identifier là tên database instance, khác hoàn toàn với tên của database.</p>
 </div>
 
-<p><img src="/images/2.prerequisite/20-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/20-createec2.png" alt="ConnectPrivate"></p>
 <ul>
 <li>Ở phần <strong>Instance configuration</strong>, chọn <strong>DB instance class</strong> mặc định. Có thể chọn các lớp tối ưu hóa bộ nhớ hoặc tối ưu hóa tính toán tùy thuộc vào mục đích sử dụng database (Chỉ có ở template Dev/Test và Production).</li>
 </ul>
-<p><img src="/images/2.prerequisite/21-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/21-createec2.png" alt="ConnectPrivate"></p>
 <ul>
 <li>
 <p>Ở phần <strong>Storage</strong>, chọn <strong>Storage type</strong> là gp2.</p>
 </li>
 <li>
 <p>Điền <strong>Allocated storage</strong> cần dùng.</p>
-<p><img src="/images/2.prerequisite/22-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/22-createec2.png" alt="ConnectPrivate"></p>
 </li>
 <li>
 <p>Ở phần <strong>Connectivity</strong>, chọn <strong>Compute resource</strong> từ EC2 vừa tạo.</p>
 </li>
 </ul>
-<p><img src="/images/2.prerequisite/23-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/23-createec2.png" alt="ConnectPrivate"></p>
 <ul>
 <li>Chọn <strong>Automatic setup</strong> để AWS tự tạo các subnet cho RDS.</li>
 <li>Chọn <strong>Public access</strong> là <strong>No</strong> để cấu hình định tuyến lưu lượng chỉ cho phép database kết nối với EC2 trong cùng VPC. Database không thể kết nối từ bên ngoài.</li>
 </ul>
-<p><img src="/images/2.prerequisite/24-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/24-createec2.png" alt="ConnectPrivate"></p>
 <ul>
 <li>Điền <strong>Database name</strong> trong phần <strong>Addtionnal configuration</strong></li>
 </ul>
-<p><img src="/images/2.prerequisite/25-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/25-createec2.png" alt="ConnectPrivate"></p>
 <ul>
 <li>Chọn số ngày lưu giữ tự động các bản sao lưu <strong>Back up</strong> và <strong>Encrytion</strong> (Nếu có).</li>
 </ul>
-<p><img src="/images/2.prerequisite/26-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/26-createec2.png" alt="ConnectPrivate"></p>
 <ul>
 <li>Trong phần <strong>Maintainance</strong> giữ các lựa chọn mặc định.</li>
 <li>Xem lại cấu hình và chi phí dự tính trước khi chọn <strong>Create database</strong>.</li>
@@ -636,7 +636,7 @@
 <div class="notices note" ><p>Tính toán chi phí gợi ý chỉ mang tính chất tham khảo, không bao gồm chi phí lưu trữ bản sao lưu, IO (nếu có) hoặc truyền dữ liệu.</p>
 </div>
 
-<p><img src="/images/2.prerequisite/27-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/27-createec2.png" alt="ConnectPrivate"></p>
 <p>Mất một khoảng thời gian để AWS tạo ra database của bạn.</p>
 
 
