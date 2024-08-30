@@ -571,7 +571,7 @@
 <li>Select <strong>Databases</strong>.</li>
 <li>Select <strong>Create database</strong>.</li>
 </ul>
-<p><img src="/images/2.prerequisite/17-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/17-createec2.png" alt="ConnectPrivate"></p>
 <ol start="2">
 <li>On the <strong>Step 1</strong> page</li>
 </ol>
@@ -579,7 +579,7 @@
 <li>Select <strong>Standard create</strong>.</li>
 <li>Select the database type as <strong>PostgreSQL</strong>.</li>
 </ul>
-<p><img src="/images/2.prerequisite/18-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/18-createec2.png" alt="ConnectPrivate"></p>
 <ul>
 <li>Select the PostgreSQL version.</li>
 <li>Select <strong>Template</strong> as Freetier.</li>
@@ -588,7 +588,7 @@
 <div class="notices note" ><p>Multi-AZ deployment options are only enabled in the Dev/Test and Production templates. With <strong>Multi-AZ DB cluster</strong>, there are two redundant DBs that can handle read traffic, providing higher availability and workload distribution. With <strong>Multi-AZ DB Instance</strong>, there is only one redundant DB that does not handle read traffic, and is only used for failover.</p>
 </div>
 
-<p><img src="/images/2.prerequisite/19-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/19-createec2.png" alt="ConnectPrivate"></p>
 <ul>
 <li>In <strong>Settings</strong>, enter your cluster DB name, the master username used to log in to the database.</li>
 <li>Select <strong>Self managed</strong> to self-manage password authentication, enter the password and repeat the password to create.</li>
@@ -597,33 +597,33 @@
 <div class="notices note" ><p>Database cluster identifier is the database instance name, completely different from the database name.</p>
 </div>
 
-<p><img src="/images/2.prerequisite/20-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/20-createec2.png" alt="ConnectPrivate"></p>
 <ul>
 <li>In the <strong>Instance configuration</strong> section, select the default <strong>DB instance class</strong>. You can select memory-optimized or compute-optimized classes depending on the purpose of using the database (Only available in Dev/Test and Production templates).</li>
 </ul>
-<p><img src="/images/2.prerequisite/21-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/21-createec2.png" alt="ConnectPrivate"></p>
 <ul>
 <li>In the <strong>Storage</strong> section, select <strong>Storage type</strong> as gp2.</li>
 <li>Fill in the <strong>Allocated storage</strong> you need.</li>
 </ul>
-<p><img src="/images/2.prerequisite/22-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/22-createec2.png" alt="ConnectPrivate"></p>
 <ul>
 <li>In the <strong>Connectivity</strong> section, select <strong>Compute resource</strong> from the newly created EC2.</li>
 </ul>
-<p><img src="/images/2.prerequisite/23-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/23-createec2.png" alt="ConnectPrivate"></p>
 <ul>
 <li>Select <strong>Automatic setup</strong> to let AWS automatically create subnets for RDS.</li>
 <li>Select <strong>Public access</strong> as <strong>No</strong> to configure traffic routing to only allow databases to connect to EC2 in the same VPC. Databases cannot be connected from outside.</li>
 </ul>
-<p><img src="/images/2.prerequisite/24-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/24-createec2.png" alt="ConnectPrivate"></p>
 <ul>
 <li>Fill in <strong>Database name</strong> in the <strong>Additional configuration</strong> section</li>
 </ul>
-<p><img src="/images/2.prerequisite/25-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/25-createec2.png" alt="ConnectPrivate"></p>
 <ul>
 <li>Select the number of days to automatically retain backups <strong>Back up</strong> and <strong>Encrytion</strong> (if any).</li>
 </ul>
-<p><img src="/images/2.prerequisite/26-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/26-createec2.png" alt="ConnectPrivate"></p>
 <ul>
 <li>In the <strong>Maintainance</strong> section, keep the default options.</li>
 <li>Review your configuration and estimated costs before selecting <strong>Create database</strong>.</li>
@@ -632,7 +632,7 @@
 <div class="notices note" ><p>The suggested cost calculation is for reference only and does not include backup storage, IO (if applicable), or data transfer costs.</p>
 </div>
 
-<p><img src="/images/2.prerequisite/27-createec2.png" alt="ConnectPrivate"></p>
+<p><img src="/nguyenchungvan.github.io/images/2.prerequisite/27-createec2.png" alt="ConnectPrivate"></p>
 <p>It takes some time for AWS to create your database.</p>
 
 
